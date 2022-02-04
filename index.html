@@ -1,60 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
+<html>
+
+<head>
     <meta charset="UTF-8" />
-    <title id="title">Fork Me! FCC: Test Suite Template</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Survey</title>
+    <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+</head>
 
-  <body id="main">
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
-
-    <div id="img-div">
-      <img id="image" style="height: 100%; width: 100%; object-fit: contain" />
-      <caption id="img-caption">
-        Image not visible
-      </caption>
-    </div>
-    <a id="tribute-link" href="www.google.com" target="_blank"></a>
-
-    <h1 id="title">Fork Me! FCC: Test Suite Template</h1>
-
-    <p id="tribute-info">hdhfdighfkjhf</p>
-
-    <h1>Hello World, we are software developer!</h1>
-
-    <form id="survey-form">
-      <label>My Name</label>
-      <input type="text" id="name" />
-      <label>My email</label>
-      <input type="email" id="email" />
-      <label>My number</label>
-      <input type="number" id="number" />
+<body>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <h1 id="title">Survey</h1>
+    <p id="description">This is a survey</p>
+    <form id="survey-form" action="" method="post">
+        <!-- <div class="wrapper"> -->
+            <label id="name-label" for="name">My Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter you name" required
+            />
+            <label id="email-label" for="email">My email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter a valid email address"
+                required />
+            <label id="number-label" for="number">My number:</label>
+            <input type="number" name="number" id="number" placeholder="number" min="1" max="150"
+                required />
+            <p>Which option best describes your current role?</p>
+            <!-- Option from a Dropdown -->
+            <select name="some_name" id="dropdown">
+					<option value="" selected>Select an option</option>
+					<option value="job less">job less</option>
+					<option value="job">Full Time Job</option>
+					<option value="student">student</option>
+					<option value="part time">part time job</option>
+					<option value="other">Other</option>
+				</select>
+            <p>satisfied?</p>
+            <div class="radio-container">
+                <!-- Group of radio buttons -->
+                <div class="radio-element">
+                    <input type="radio" value="attribute" name="attribute" id="yes" />
+                    <label class="label-radio" for="yes"> Yes</label>
+                </div>
+                <div class="radio-element">
+                    <input type="radio" value="attribute" name="attribute" id="no" />
+                    <label class="label-radio" for="no"> No</label>
+                </div>
+                <div class="radio-element">
+                    <input type="radio" value="attribute" name="attribute" id="not sure" />
+                    <label class="label-radio" for="not sure"> Not sure</label>
+                </div>
+            </div>
+          
+            <p>question?</p>
+            <div class="checkbox-container">
+                <div class="checkbox-element">
+                    <input type="checkbox" value="attribute" id="ans1" />
+                    <label for="ans1">Ans1</label>
+                </div>
+                <div class="checkbox-element">
+                    <input type="checkbox" value="attribute" id="ans1" />
+                    <label for="ans1">Ans1</label>
+                </div>
+                <div class="checkbox-element">
+                    <input type="checkbox" value="attribute" id="ans1" />
+                    <label for="ans1">Ans1</label>
+                </div>
+                <div class="checkbox-element">
+                    <input type="checkbox" value="attribute" id="ans1" />
+                    <label for="ans1">Ans1</label>
+                </div>
+            </div>
+       
+            <p>comment</p>
+            <textarea name="comments" id="comments"></textarea>
+        <!-- </div> -->
+        <button class="shadow" type="submit" id="submit">submit</button>
     </form>
 
-    <h1 id="main">Fork Me! FCC: Test Suite Template</h1>
-
-    <h1>Hello World, we are software developer!</h1>
-    <form id="survey-form">
-      <label>My Name</label>
-      <input type="text" id="name" />
-      <label>My email</label>
-      <input type="email" id="email" />
-      <label>My number</label>
-      <input type="number" id="number" />
-    </form>
-    <!--
-
-    Hello Camper!
-
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
-
-    - The freeCodeCamp Team
-
-    -->
     <script src="js/index.js"></script>
-  </body>
+</body>
+
 </html>
